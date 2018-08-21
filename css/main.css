@@ -1,0 +1,91 @@
+body {
+    width: 100%;
+    font-family: Arial, Verdana, sans-serif;
+    background: #f7f7f9;
+    text-align: center;
+}
+
+div#mainpage{
+    overflow: auto;
+    align-content: center;
+    position: absolute;
+}
+
+input {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: white;
+    border: 1px solid #f2f2f2;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: ;
+}
+
+td {
+    border: 1px solid #b2b2b2;
+    padding: 15px;
+    border-radius: 5px;
+    background-position: 0px 0px;
+    cursor: pointer;
+    text-align: center;}
+td:hover {
+    color: white;
+    background: lightgray;
+}
+td:active {
+    background: gray;
+    text-shadow: 5px 5px 1px #000000;
+}
+
+td.wpisz {
+    border: 0px solid white;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;}
+td.wpisz:hover {
+    background: white;
+}
+
+
+td.dz {
+    background: #b9e4e3;
+    text-shadow: 0px 1px 1px #ffffff;
+}
+td.dz:hover {
+    background: lightgray;
+}
+td.dz:active {
+    background: gray;
+    text-shadow: 5px 5px 1px #000000;
+}
+
+td.wyn {
+    background: #dee0ed;
+    text-shadow: 0px 1px 1px #ffffff;
+}
+td.wyn:hover {
+    background: lightgray;
+}
+td.wyn:active {
+    background: gray;
+    text-shadow: 5px 5px 1px #000000;
+}
+
+td.ce {
+    background: #b9e4e3;
+    text-shadow: 0px 1px 1px #ffffff;
+}
+td.ce:hover {
+    color: red;
+    background: lightgray;
+}
+td.ce:active {
+    background: gray;
+    text-shadow: 5px 5px 1px red;
+}
+
+table.key {
+    border-spacing: 5px 5px;
+}
+
+

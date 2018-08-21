@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=pl>
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="mainpage">
+     <header>
+        <h1>Calculator</h1>
+        <h4>version 2.0</h4>
+     </header>
+    <div id="calc">
+        <table class="key">
+            <tr>
+                <td class="wpisz" colspan="4"><input type="text" id="liczba1" /></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="dz" onclick="dodaj()">+</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td class="dz" onclick="odejmij()">-</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td class="dz" onclick="razy()">*</td>
+            </tr>
+            <tr>
+                <td colspan="2">0</td>
+                <td>,</td>
+                <td class="dz">:</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="wyn" onclick="wynik()">=</td>
+                <td class="ce">CE</td>
+            </tr>
+        </table>
+        
+    </div>
+       
+    <script src="js/calc1.js"></script>
+    <div id="koniec"></div>
+    </div>         
+        
+</body>
+</html>
