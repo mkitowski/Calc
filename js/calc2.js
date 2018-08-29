@@ -1,0 +1,1 @@
+document.getElementById("liczba1").value="0";

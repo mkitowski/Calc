@@ -6,6 +6,7 @@
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    
     <div id="mainpage">
      <header>
         <h1>Calculator</h1>
@@ -17,34 +18,34 @@
                 <td class="wpisz" colspan="4"><input type="text" id="liczba1" /></td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td class="dz" onclick="dodaj()">+</td>
+                <td onclick="cyfra(1)">1</td>
+                <td onclick="cyfra(2)">2</td>
+                <td onclick="cyfra(3)">3</td>
+                <td class="dz" onclick="operator('+')">+</td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td class="dz" onclick="odejmij()">-</td>
+                <td onclick="cyfra(4)">4</td>
+                <td onclick="cyfra(5)">5</td>
+                <td onclick="cyfra(6)">6</td>
+                <td class="dz" onclick="operator('-')">-</td>
             </tr>
             <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td class="dz" onclick="razy()">*</td>
+                <td onclick="cyfra(7)">7</td>
+                <td onclick="cyfra(8)">8</td>
+                <td onclick="cyfra(9)">9</td>
+                <td class="dz" onclick="operator('*')">*</td>
             </tr>
             <tr>
-                <td colspan="2">0</td>
-                <td>,</td>
-                <td class="dz">:</td>
+                <td colspan="2" onclick="cyfra(0)">0</td>
+                <td onclick="li()">,</td>
+                <td class="dz" onclick="operator('/')">:</td>
             </tr>
             <tr>
                 <td colspan="3" class="wyn" onclick="wynik()">=</td>
-                <td class="ce">CE</td>
+                <td class="ce" onclick="czysc()">CE</td>
             </tr>
         </table>
-        
+        <script src=js/calc2.js></script>
     </div>
        
     <script src="js/calc1.js"></script>
