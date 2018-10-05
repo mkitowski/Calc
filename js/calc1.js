@@ -16,17 +16,36 @@ function cyfra(cyf) {
         document.getElementById("liczba1").value += cyf;
     }
 }
+window.addEventListener('keydown', function (e) {
+    const keys = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    const operat = document.querySelector(`.dz[data-key="${e.keyCode}"]`);
+    const result = document.querySelector(`.wyn[data-key="${e.keyCode}"]`);
+    const com = document.querySelector(`.coma[data-key="${e.keyCode}"]`);
+    const cleaner = document.querySelector(`.ce[data-key="${e.keyCode}"]`);
+    if (keys) {
+        keys.addEventListener('click', cyfra(e.key));
+    } else if (operat) {
+        operat.addEventListener('click', operator(e.key));
+    } else if (result) {
+        result.addEventListener('click', wynik());
+    } else if (com) {
+        com.addEventListener('click', li());
+    } else if (cleaner) {
+        cleaner.addEventListener('click', czysc());
+    } else return;
+
+    console.log(e.key);
+})
 
 function li() {
     var spr=document.getElementById("liczba1").value;
-    var przec=",";
-    
+       
     if (spr.search(",")== -1){
         document.getElementById("liczba1").value+=",";
-        document.getElementById("koniec").innerHTML="jest przecinek";
+       // document.getElementById("koniec").innerHTML="jest przecinek";
     }
     else {
-        document.getElementById("koniec").innerHTML="nie ma przecineka";
+       // document.getElementById("koniec").innerHTML="nie ma przecineka";
     }
 }
 function czysc() {

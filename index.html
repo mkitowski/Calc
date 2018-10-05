@@ -10,39 +10,39 @@
     <div id="mainpage">
      <header>
         <h1>Calculator</h1>
-        <h4>version 2.0</h4>
+        <h4>version 2.5</h4>
      </header>
     <div id="calc">
         <table class="key">
             <tr>
-                <td class="wpisz" colspan="4"><input type="text" id="liczba1" /></td>
+                <td class="wpisz" colspan="4"><input type="label" id="liczba1" disabled /></td>
             </tr>
             <tr>
-                <td onclick="cyfra(1)">1</td>
-                <td onclick="cyfra(2)">2</td>
-                <td onclick="cyfra(3)">3</td>
-                <td class="dz" onclick="operator('+')">+</td>
+                <td data-key="97" class="key" onclick="cyfra(1)">1</td>
+                <td data-key="98" class="key" onclick="cyfra(2)">2</td>
+                <td data-key="99" class="key" onclick="cyfra(3)">3</td>
+                <td class="dz" data-key="107" onclick="operator('+')">+</td>
             </tr>
             <tr>
-                <td onclick="cyfra(4)">4</td>
-                <td onclick="cyfra(5)">5</td>
-                <td onclick="cyfra(6)">6</td>
-                <td class="dz" onclick="operator('-')">-</td>
+                <td data-key="100" class="key" onclick="cyfra(4)">4</td>
+                <td data-key="101" class="key" onclick="cyfra(5)">5</td>
+                <td data-key="102" class="key" onclick="cyfra(6)">6</td>
+                <td class="dz" data-key="109" onclick="operator('-')">-</td>
             </tr>
             <tr>
-                <td onclick="cyfra(7)">7</td>
-                <td onclick="cyfra(8)">8</td>
-                <td onclick="cyfra(9)">9</td>
-                <td class="dz" onclick="operator('*')">*</td>
+                <td data-key="103" class="key" onclick="cyfra(7)">7</td>
+                <td data-key="104" class="key" onclick="cyfra(8)">8</td>
+                <td data-key="105" class="key" onclick="cyfra(9)">9</td>
+                <td class="dz" data-key="106" onclick="operator('*')">*</td>
             </tr>
             <tr>
-                <td colspan="2" onclick="cyfra(0)">0</td>
-                <td onclick="li()">,</td>
-                <td class="dz" onclick="operator('/')">:</td>
+                <td colspan="2" class="key" odata-key="96" onclick="cyfra(0)">0</td>
+                <td class="coma" data-key="108" onclick="li()">,</td>
+                <td class="dz" data-key="111" onclick="operator('/')">:</td>
             </tr>
             <tr>
-                <td colspan="3" class="wyn" onclick="wynik()">=</td>
-                <td class="ce" onclick="czysc()">CE</td>
+                <td colspan="3" class="wyn" data-key="13" onclick="wynik()">=</td>
+                <td class="ce" data-key="8" onclick="czysc()">CE</td>
             </tr>
         </table>
         <script src=js/calc2.js></script>
